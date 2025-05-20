@@ -36,8 +36,8 @@
     <Button
         android:id="@+id/btnTrue"
         android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="280dp"
         android:backgroundTint="#474343"
         android:text="🆃🆁🆄🅴"
         android:textAlignment="center"
@@ -53,9 +53,9 @@
 
     <Button
         android:id="@+id/btnFalse"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="300dp"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="280dp"
         android:backgroundTint="#474343"
         android:text="🅵🅰🅻🆂🅴"
         android:textAlignment="center"
@@ -67,30 +67,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <Button
         android:id="@+id/btnNext"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="410dp"
         android:backgroundTint="#474343"
         android:text="🅽🅴🆇🆃"
         android:textAlignment="center"
         android:textColor="#689F38"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imgvQuestionScreenBackground"
         app:layout_constraintStart_toStartOf="@+id/imgvQuestionScreenBackground"
         app:layout_constraintTop_toTopOf="@+id/imgvQuestionScreenBackground"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <TextView
         android:id="@+id/tvScoreCounter"
         android:layout_width="150dp"
         android:layout_height="65dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="340dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textColorLink="@color/black"

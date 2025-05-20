@@ -24,7 +24,7 @@
         android:layout_width="380dp"
         android:layout_height="380dp"
         android:layout_marginTop="10dp"
-        android:text='1. The Great Emu War ended with the emus outmaneuvering the Australian military. True.                          2. Napoleon was famously allergic to horses. False.                                     3. Roman senators used a communal sponge on a stick for wiping in public toilets. True.                                  4. George Washington invented the microwave oven. False.                    5. Ancient Egyptians used honey in the embalming process. True.'
+        android:text='1. The Great Emu War ended with the Emus outmaneuvering the Australian military. True.                          2. Napoleon was famously allergic to horses. False.                                     3. Roman senators used a communal sponge on a stick for wiping in public toilets. True.                                  4. George Washington invented the microwave oven. False.                    5. Ancient Egyptians used honey in the embalming process. True.'
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textColorLink="@color/black"

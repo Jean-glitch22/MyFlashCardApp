@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }//starting code here
 
-        //variables
+        //variable
         val btnStart = findViewById<Button>(R.id.btnStart)
 
         //button is clicked
@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             //starting the new activity
             startActivity(intent)
 
+            //logging the button click
             log.d("Button", "Clicked")
 
         }

@@ -54,7 +54,7 @@
             android:layout_height="80dp"
             android:layout_marginTop="45dp"
             android:backgroundTint="#474343"
-            android:text="🆂🆃🅰🆁🆃!"
+            android:text="🆂🆃🅰🆁🆃"
             android:textAlignment="center"
             android:textColor="#689F38"
             android:textSize="34sp"

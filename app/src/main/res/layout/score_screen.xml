@@ -37,18 +37,18 @@
 
     <Button
         android:id="@+id/btnReview"
-        android:layout_width="220dp"
-        android:layout_height="80dp"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
         android:layout_marginTop="45dp"
         android:backgroundTint="#474343"
         android:text="🆁🅴🆅🅸🅴🆆"
         android:textAlignment="center"
         android:textColor="#689F38"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/imgvScoreScreenBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvScoreAndFeedback"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,TextSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

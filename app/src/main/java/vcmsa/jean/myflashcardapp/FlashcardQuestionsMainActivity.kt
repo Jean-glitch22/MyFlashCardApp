@@ -26,7 +26,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
 
         //an array of questions that will be displayed
         val questions = arrayOf(
-            "1. The Great Emu War ended with the emus outmaneuvering the Australian military.",
+            "1. The Great Emu War ended with the Emus outmaneuvering the Australian military.",
             "2. Napoleon was famously allergic to horses.",
             "3. Roman senators used a communal sponge on a stick for wiping in public toilets.",
             "4. George Washington invented the microwave oven.",
@@ -38,7 +38,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
 
         //an array of correct messages that will be displayed
         val correctMessages = arrayOf(
-            "Correct! The emus won the war proving that birds beat bullets.",
+            "Correct! The Emus won the war proving that birds beat bullets.",
             "Correct! Napoleon may have been short, but he wasn't horseless. Dude practically lived in the saddle.",
             "Correct! Ancient Rome: where hygiene met horror. One sponge. Many butts.",
             "Correct! Washington could chop wood, not heat Hot Pockets.",
@@ -47,7 +47,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
 
         //an array of incorrect messages that will be displayed
         val incorrectMessages = arrayOf(
-            "Incorrect. The emus literally ran circles around the soldiers.",
+            "Incorrect. The Emus literally ran circles around the soldiers.",
             "Incorrect. If he had been, half his wars would’ve been fought on foot — very un-dramatic.",
             "Incorrect. They did share a stick-sponge. So yeah… don’t romanticize the past too hard.",
             "Incorrect. George had many talents. Microwaving wasn’t one. He preferred fire and powdered wigs.",
@@ -91,6 +91,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
                 //marks the question as answered
                 answered = true
 
+                //logging for debugging
                 log.i("Button", "Clicked")
             }
         }
@@ -112,6 +113,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
                 //marks the question as answered
                 answered = true
 
+                //logging for debugging
                 log.i("Button", "Clicked")
             }
         }
@@ -125,11 +127,11 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
                 //asks the user to answer the question if they press next before answering
                 tvQuestions.text = "Answer First."
 
-                // Delay for 2 seconds before updating the question
+                //delay for 2 seconds before updating the question
                 Handler(Looper.getMainLooper()).postDelayed({
                     //shows the current question again after 2 seconds
                     tvQuestions.text = currentQuestion
-                }, 2000) // Delay of 2000 milliseconds = 2 seconds
+                }, 2000) //delay of 2000 milliseconds = 2 seconds
 
                 //if not answered then it exits the click listener early
                 return@setOnClickListener
@@ -150,6 +152,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
                 //starts the score screen
                 startActivity(intent)
 
+                //logging transition to score screen
                 log.wtf("Button", "Clicked")
             }
         }
