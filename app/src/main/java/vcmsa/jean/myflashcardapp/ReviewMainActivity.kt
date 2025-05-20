@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.system.exitProcess
+import android.util.Log as log
 
 class ReviewMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +16,8 @@ class ReviewMainActivity : AppCompatActivity() {
         btnExit.setOnClickListener {
             finish()
             exitProcess(0)
+
+            log.e("Button", "Clicked")
         }
 
     }

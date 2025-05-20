@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import android.util.Log as log
 
 class ScoreMainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -32,9 +33,13 @@ class ScoreMainActivity : AppCompatActivity() {
         // Set the score and feedback message to the TextView
         tvScoreAndFeedback.text = "Final Score: $score out of $totalQuestions\nFeedback: $feedbackMessage"
 
+        log.v("Score", "Final Score: $score out of $totalQuestions")
+
         btnReview.setOnClickListener {
             val intent = Intent(this, ReviewMainActivity::class.java)
             startActivity(intent)
+
+            log.d("Button", "Clicked")
         }
 
         }

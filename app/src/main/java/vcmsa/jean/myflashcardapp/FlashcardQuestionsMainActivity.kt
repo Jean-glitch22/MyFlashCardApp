@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.jvm.java
+import android.util.Log as log
 
 class FlashcardQuestionsMainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -16,12 +17,14 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.flashcard_question_screen)
 
+        //variables
         val btnTrue = findViewById<Button>(R.id.btnTrue)
         val btnFalse = findViewById<Button>(R.id.btnFalse)
         val btnNext = findViewById<Button>(R.id.btnNext)
         val tvScoreCounter = findViewById<TextView>(R.id.tvScoreCounter)
         val tvQuestions = findViewById<TextView>(R.id.tvQuestions)
 
+        //an array of questions that will be displayed
         val questions = arrayOf(
             "1. The Great Emu War ended with the emus outmaneuvering the Australian military.",
             "2. Napoleon was famously allergic to horses.",
@@ -30,8 +33,10 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
             "5. Ancient Egyptians used honey in the embalming process."
         )
 
+        //boolean array of answers to the questions
         val answers = booleanArrayOf(true, false, true, false, true)
 
+        //an array of correct messages that will be displayed
         val correctMessages = arrayOf(
             "Correct! The emus won the war proving that birds beat bullets.",
             "Correct! Napoleon may have been short, but he wasn't horseless. Dude practically lived in the saddle.",
@@ -40,6 +45,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
             "Correct! Egyptians really did preserve bodies with honey — like ancient, slightly cursed gummy bears."
         )
 
+        //an array of incorrect messages that will be displayed
         val incorrectMessages = arrayOf(
             "Incorrect. The emus literally ran circles around the soldiers.",
             "Incorrect. If he had been, half his wars would’ve been fought on foot — very un-dramatic.",
@@ -48,65 +54,103 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
             "Incorrect. Honey was totally in the mix. Tasty, antiseptic, and disturbingly effective on corpses."
         )
 
+        //this keeps track of the current question index
         var currentIndex = 0
+        //this keeps track of the score
         var score = 0
+        //this keeps track of whether the question has been answered
         var answered = false
 
+        //updates the question
         fun updateQuestion() {
+            //updates to next question
             tvQuestions.text = questions[currentIndex]
+            //resets the answer flag to false for the next question
             answered = false
         }
 
-        // Display the first question and initial score
+        //sets the first question when the activity is created
         tvQuestions.text = questions[currentIndex]
+        //sets the score counter to 0 when the activity is created
         tvScoreCounter.text = "Score: $score"
 
+        //button is clicked
         btnTrue.setOnClickListener {
+            //checks if the question has been answered
             if (!answered) {
+                //checks if the answer is correct and increments the score and displays the correct message
                 if (answers[currentIndex]) {
                     score++
                     tvQuestions.text = correctMessages[currentIndex]
                 } else {
+                    //displays the incorrect message if the answer is incorrect
                     tvQuestions.text = incorrectMessages[currentIndex]
                 }
+                //updates the score counter
                 tvScoreCounter.text = "Score: $score"
+                //marks the question as answered
                 answered = true
+
+                log.i("Button", "Clicked")
             }
         }
 
+        //button is clicked
         btnFalse.setOnClickListener {
+            //checks if the question has been answered
             if (!answered) {
+                //checks if the answer is correct and increments the score and displays the correct message
                 if (!answers[currentIndex]) {
                     score++
                     tvQuestions.text = correctMessages[currentIndex]
                 } else {
+                    //displays the incorrect message if the answer is incorrect
                     tvQuestions.text = incorrectMessages[currentIndex]
                 }
+                //updates the score counter
                 tvScoreCounter.text = "Score: $score"
+                //marks the question as answered
                 answered = true
+
+                log.i("Button", "Clicked")
             }
         }
 
+        //button is clicked
         btnNext.setOnClickListener {
+            //checks if the question has been answered
             if (!answered) {
+                //stores the current question
                 val currentQuestion = questions[currentIndex]
+                //asks the user to answer the question if they press next before answering
                 tvQuestions.text = "Answer First."
 
+                // Delay for 2 seconds before updating the question
                 Handler(Looper.getMainLooper()).postDelayed({
+                    //shows the current question again after 2 seconds
                     tvQuestions.text = currentQuestion
                 }, 2000) // Delay of 2000 milliseconds = 2 seconds
 
+                //if not answered then it exits the click listener early
                 return@setOnClickListener
             }
+            //checks if there are more questions and if so it goes to the next question
             if (currentIndex < questions.size - 1) {
+                //increments the question index
                 currentIndex++
+                //updates the question
                 updateQuestion()
             } else {
-                // Go to the score screen
+                //if there are no more questions then it goes to the score screen
                 val intent = Intent(this, ScoreMainActivity::class.java)
+                //passes over the score to the score screen
                 intent.putExtra("score", score)
+                //passes over the total number of questions to the score screen
                 intent.putExtra("totalQuestions", questions.size)
+                //starts the score screen
                 startActivity(intent)
+
+                log.wtf("Button", "Clicked")
             }
         }
     }

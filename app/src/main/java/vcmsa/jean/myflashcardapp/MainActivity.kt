@@ -7,7 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import kotlin.jvm.java
+import android.util.Log as log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,11 +20,17 @@ class MainActivity : AppCompatActivity() {
             insets
         }//starting code here
 
+        //variables
         val btnStart = findViewById<Button>(R.id.btnStart)
 
+        //button is clicked
         btnStart.setOnClickListener {
+            //when the button is clicked it will go to the next screen
             val intent = Intent(this, FlashcardQuestionsMainActivity::class.java)
+            //starting the new activity
             startActivity(intent)
+
+            log.d("Button", "Clicked")
 
         }
 
