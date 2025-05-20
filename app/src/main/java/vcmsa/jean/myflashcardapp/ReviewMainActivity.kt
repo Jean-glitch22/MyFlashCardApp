@@ -3,7 +3,6 @@ package vcmsa.jean.myflashcardapp
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.system.exitProcess
 import android.util.Log as log
 
 class ReviewMainActivity : AppCompatActivity() {
@@ -17,8 +16,7 @@ class ReviewMainActivity : AppCompatActivity() {
         //button is clicked
         btnExit.setOnClickListener {
             //when the button is clicked it will exit the app
-            finish()
-            exitProcess(0)
+            finishAffinity()
 
             //logging the exit process
             log.e("Button", "Clicked")
