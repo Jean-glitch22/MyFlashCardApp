@@ -1,17 +1,16 @@
-name: Android Detekt Analysis
+name: Android Code Check
 
 on:
-  push:
-    branches: [ "master" ]
+  workflow_dispatch:  # Manual trigger only — useful for on-demand code review
   pull_request:
     branches: [ "master" ]
 
 jobs:
-  detekt:
+  code_analysis:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up JDK 17
@@ -21,7 +20,7 @@ jobs:
           java-version: 17
           cache: gradle
 
-      - name: Cache Gradle packages
+      - name: Cache Gradle Dependencies
         uses: actions/cache@v4
         with:
           path: |
@@ -34,8 +33,9 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Run Detekt
+      - name: Run Static Analysis (Detekt)
         run: ./gradlew detekt
+
 
 
 
