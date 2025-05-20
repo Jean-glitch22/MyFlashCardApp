@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/evolution" />
+        app:srcCompat="@drawable/evolution"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/tvQuestions"
@@ -40,14 +41,15 @@
         android:backgroundTint="#474343"
         android:text="🆃🆁🆄🅴"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#689F38"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btnFalse"
@@ -57,30 +59,32 @@
         android:backgroundTint="#474343"
         android:text="🅵🅰🅻🆂🅴"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#689F38"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btnNext"
         android:layout_width="180dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginTop="420dp"
         android:backgroundTint="#474343"
         android:text="🅽🅴🆇🆃"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#689F38"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imgvQuestionScreenBackground"
         app:layout_constraintStart_toStartOf="@+id/imgvQuestionScreenBackground"
         app:layout_constraintTop_toTopOf="@+id/imgvQuestionScreenBackground"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/tvScoreCounter"
