@@ -62,7 +62,17 @@ The purpose of this application is to:
 
 ## Report
 
-//
+The MyFlashCardApp is a native Android application developed using Kotlin in Android Studio. Its core purpose is to assist learners in revising and testing their knowledge through flashcard-style questions. Flashcards have long been recognized as a powerful learning tool due to their simplicity and effectiveness in reinforcing memory through repetition. This app focuses on history-themed questions, presenting five multiple-choice flashcards that the user navigates through. The application evaluates the user's responses and provides a score at the end, helping learners to identify knowledge gaps and track their progress.
+
+The app’s design prioritizes usability and accessibility. The user interface is intentionally minimalist to ensure that users can focus solely on the content of the flashcards without distraction. Navigation between flashcards is intuitive, with clear “Next” and “Submit” options to enhance flow. Each flashcard contains a well-formatted question and multiple-choice answers, designed to simulate a real quiz experience. At the conclusion of the session, users receive instant feedback in the form of a score summary, which not only fosters a sense of achievement but also encourages repeated use and iterative learning.
+
+From a technical standpoint, the code follows modular principles. The Kotlin-based architecture separates UI logic from the core business logic, which enhances maintainability and scalability. Proper inline comments are included to improve readability and assist future developers or reviewers in understanding the logic. Resource files are organized efficiently, and the structure adheres to standard Android development practices. The app is compatible with a range of Android devices, taking into account screen responsiveness and performance optimization.
+
+In terms of collaboration and source control, GitHub was utilized throughout the development lifecycle. The project repository (Jean-glitch22/MyFlashCardApp) contains all source files, commits, and workflow documentation. This ensured consistent backup, version control, and the ability to track incremental changes. Additionally, GitHub Actions was integrated to automate continuous integration tasks. Specifically, an action was configured to automatically build the project upon each push, helping to detect any build errors early in the development process. This CI workflow not only enhances code reliability but also reflects industry best practices in software development.
+
+An important aspect of this project is the support received through AI assistance, particularly in structuring documentation, optimizing design decisions, and ensuring code clarity. The inclusion of AI-assisted development reflects modern programming trends and showcases how AI tools can be responsibly leveraged to improve quality and productivity.
+
+Overall, the MyFlashCardApp serves as both a practical educational tool and a demonstration of technical competency in mobile app development. It reflects an understanding of user-centered design, software development workflows, and the integration of modern tools such as GitHub Actions for automation. The project stands as a foundation that can be expanded upon with additional features such as topic selection, score tracking history, or online flashcard content retrieval.
 
 ---
 
