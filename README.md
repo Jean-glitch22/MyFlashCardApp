@@ -43,8 +43,13 @@ The purpose of this application is to:
 ---
 
 ## Screenshots
-
-
+![Screenshot 2025-05-20 070845](https://github.com/user-attachments/assets/e9fe71ec-3f0d-4107-ba1e-e399e92af618)
+![Screenshot 2025-05-20 070917](https://github.com/user-attachments/assets/b030beaf-40b0-4f75-b441-c7aba5fa62e9)
+![Screenshot 2025-05-20 070957](https://github.com/user-attachments/assets/fb3240d7-06d9-4296-8d8f-62088b904fa4)
+![Screenshot 2025-05-20 071036](https://github.com/user-attachments/assets/3124ec5f-4a30-407b-8ab4-2f1a78d42992)
+![Screenshot 2025-05-20 071059](https://github.com/user-attachments/assets/d988b568-c6e2-4bc6-a74a-5127edec0a43)
+![Screenshot 2025-05-20 071124](https://github.com/user-attachments/assets/02280895-6f79-408c-8991-8e36cfbc6b17)
+![Screenshot 2025-05-20 071154](https://github.com/user-attachments/assets/100ae26d-3c4c-4623-a8e1-2bcc43112502)
 
 
 ---
