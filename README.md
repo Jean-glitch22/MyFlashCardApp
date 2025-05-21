@@ -49,12 +49,6 @@ The purpose of this application is to:
 
 ---
 
-## References
-
-
-
----
-
 ## AI Acknowledgment
 
 > This project's structure and documentation (including this README) were assisted by **AI support** using OpenAI’s ChatGPT, to enhance clarity and organization.
