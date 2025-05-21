@@ -6,13 +6,13 @@
 
 ---
 
-## 📱 Project Overview
+## Project Overview
 
 **MyFlashCardApp** is a native Android application built using **Kotlin** in **Android Studio**, developed as part of an assignment to test knowledge using flashcards. The app presents flashcard-style questions on the subject of history, collects responses from users, and provides a final score with feedback.
 
 ---
 
-## 🎯 Purpose of the App
+## Purpose of the App
 
 The purpose of this application is to:
 - Support students in self-assessment through quiz-based learning.
@@ -22,7 +22,7 @@ The purpose of this application is to:
 
 ---
 
-## 🛠️ Design Considerations
+## Design Considerations
 
 - **User Interface**: Clean, simple, and intuitive UI with buttons for answering questions and navigating between flashcards.
 - **Question Management**: The app loops through five history-based flashcard questions, capturing user selections and tallying scores.
@@ -32,7 +32,7 @@ The purpose of this application is to:
 
 ---
 
-## 🧪 GitHub & GitHub Actions
+## GitHub & GitHub Actions
 
 - **Version Control**: The entire project is maintained using [GitHub](https://github.com/Jean-glitch22/MyFlashCardApp), with proper commit messages documenting progress.
 - **CI/CD Integration**: Utilized **GitHub Actions** to:
@@ -42,20 +42,20 @@ The purpose of this application is to:
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 
 
 
 ---
 
-## 📚 References
+## References
 
 
 
 ---
 
-## 🤖 AI Acknowledgment
+## AI Acknowledgment
 
 > This project's structure and documentation (including this README) were assisted by **AI support** using OpenAI’s ChatGPT, to enhance clarity and organization.
 
