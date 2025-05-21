@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!-- used open AI chatGpt to make the background picture -->
         <ImageView
             android:id="@+id/imgvWelcomeScreenBackground"
             android:layout_width="wrap_content"
@@ -29,6 +30,7 @@
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/evolution"
             tools:ignore="ContentDescription,HardcodedText" />
+        <!-- end of background picture reference -->
 
         <TextView
             android:id="@+id/tvWelcomeAndIntroduction"
