@@ -18,10 +18,13 @@ class ScoreMainActivity : AppCompatActivity() {
         val tvScoreAndFeedback = findViewById<TextView>(R.id.tvScoreAndFeedback)
         val btnReview = findViewById<Button>(R.id.btnReview)
 
+        //used a mixture of a youtube video and chatgpt as a reference to help with the code "how to get score to appear on next activity using kotlin code"
+        //https://www.youtube.com/watch?v=K13fR2RHTak
         //get the score from the intent and if not found then set it to 0
         val score = intent.getIntExtra("score", 0)
         //get the total number of questions from the intent and if not found then set it to 0
         val totalQuestions = intent.getIntExtra("totalQuestions", 0)
+        //end of referenced code
 
         //gives feedback based on the score
         val feedbackMessage = when (score) {
@@ -41,12 +44,15 @@ class ScoreMainActivity : AppCompatActivity() {
         //logging for tracing and debugging in detail
         log.v("Score", "Final Score: $score out of $totalQuestions")
 
+        //used a youtube video as a reference to help with the code
+        //https://www.youtube.com/watch?v=K13fR2RHTak
         //button is clicked
         btnReview.setOnClickListener {
             //when the button is clicked it will go to the next screen
             val intent = Intent(this, ReviewMainActivity::class.java)
             //starting the new activity
             startActivity(intent)
+            //end of referenced code
 
             //logging the button click for debugging
             log.d("Button", "Clicked")

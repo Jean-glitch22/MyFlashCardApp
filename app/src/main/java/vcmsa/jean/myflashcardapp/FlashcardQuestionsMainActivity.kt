@@ -24,6 +24,8 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
         val tvScoreCounter = findViewById<TextView>(R.id.tvScoreCounter)
         val tvQuestions = findViewById<TextView>(R.id.tvQuestions)
 
+        //used a youtube video as a reference to help with the code
+        //https://www.youtube.com/watch?v=K13fR2RHTak
         //an array of questions that will be displayed
         val questions = arrayOf(
             "1. The Great Emu War ended with the Emus outmaneuvering the Australian military.",
@@ -32,10 +34,13 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
             "4. George Washington invented the microwave oven.",
             "5. Ancient Egyptians used honey in the embalming process."
         )
+        //end of referenced code
 
         //boolean array of answers to the questions
         val answers = booleanArrayOf(true, false, true, false, true)
 
+        //used a youtube video as a reference to help with the code
+        //https://www.youtube.com/watch?v=K13fR2RHTak
         //an array of correct messages that will be displayed
         val correctMessages = arrayOf(
             "Correct! The Emus won the war proving that birds beat bullets.",
@@ -44,7 +49,10 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
             "Correct! Washington could chop wood, not heat Hot Pockets.",
             "Correct! Egyptians really did preserve bodies with honey — like ancient, slightly cursed gummy bears."
         )
+        //end of referenced code
 
+        //used a youtube video as a reference to help with the code
+        //https://www.youtube.com/watch?v=K13fR2RHTak
         //an array of incorrect messages that will be displayed
         val incorrectMessages = arrayOf(
             "Incorrect. The Emus literally ran circles around the soldiers.",
@@ -53,6 +61,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
             "Incorrect. George had many talents. Microwaving wasn’t one. He preferred fire and powdered wigs.",
             "Incorrect. Honey was totally in the mix. Tasty, antiseptic, and disturbingly effective on corpses."
         )
+        //end of referenced code
 
         //this keeps track of the current question index
         var currentIndex = 0
@@ -61,6 +70,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
         //this keeps track of whether the question has been answered
         var answered = false
 
+        //asked chatgpt "how to update to the next question in kotlin" (40% originality)
         //updates the question
         fun updateQuestion() {
             //updates to next question
@@ -68,12 +78,15 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
             //resets the answer flag to false for the next question
             answered = false
         }
+        //end of referenced code
 
         //sets the first question when the activity is created
         tvQuestions.text = questions[currentIndex]
         //sets the score counter to 0 when the activity is created
         tvScoreCounter.text = "Score: $score"
 
+        //used a mixture of a youtube video and my own code as a reference to help with the code
+        //https://www.youtube.com/watch?v=K13fR2RHTak
         //button is clicked
         btnTrue.setOnClickListener {
             //checks if the question has been answered
@@ -95,7 +108,10 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
                 log.i("Button", "Clicked")
             }
         }
+        //end of referenced code
 
+        //used a mixture of a youtube video and my own code as a reference to help with the code
+        //https://www.youtube.com/watch?v=K13fR2RHTak
         //button is clicked
         btnFalse.setOnClickListener {
             //checks if the question has been answered
@@ -117,7 +133,10 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
                 log.i("Button", "Clicked")
             }
         }
+        //end of referenced code
 
+        //used a mixture of a youtube video and my own code as a reference to help with the code
+        //https://www.youtube.com/watch?v=K13fR2RHTak
         //button is clicked
         btnNext.setOnClickListener {
             //checks if the question has been answered
@@ -136,6 +155,10 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
                 //if not answered then it exits the click listener early
                 return@setOnClickListener
             }
+            //end of referenced code
+
+            //used a mixture of a youtube video and chatgpt as a reference to help with the code "how to get score to appear on next activity using kotlin code"
+            //https://www.youtube.com/watch?v=K13fR2RHTak
             //checks if there are more questions and if so it goes to the next question
             if (currentIndex < questions.size - 1) {
                 //increments the question index
@@ -151,6 +174,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
                 intent.putExtra("totalQuestions", questions.size)
                 //starts the score screen
                 startActivity(intent)
+                //end of referenced code
 
                 //logging transition to score screen
                 log.wtf("Button", "Clicked")

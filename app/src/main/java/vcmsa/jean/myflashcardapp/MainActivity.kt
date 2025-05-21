@@ -23,12 +23,16 @@ class MainActivity : AppCompatActivity() {
         //variable
         val btnStart = findViewById<Button>(R.id.btnStart)
 
+        //used a youtube video as a reference to help with the code
+        //https://www.youtube.com/watch?v=K13fR2RHTak
+
         //button is clicked
         btnStart.setOnClickListener {
             //when the button is clicked it will go to the next screen
             val intent = Intent(this, FlashcardQuestionsMainActivity::class.java)
             //starting the new activity
             startActivity(intent)
+            //end of referenced code
 
             //logging the button click
             log.d("Button", "Clicked")
