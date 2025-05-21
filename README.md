@@ -16,7 +16,7 @@
 
 The purpose of this application is to:
 - Support students in self-assessment through quiz-based learning.
-- Reinforce knowledge retention using flashcard methodology.
+- Reinforce knowledge retention using flashcards.
 - Provide immediate feedback and scoring based on responses.
 - Demonstrate mobile development skills in Kotlin and best practices in using GitHub and GitHub Actions.
 
@@ -29,6 +29,7 @@ The purpose of this application is to:
 - **Score Feedback**: At the end of the quiz, users receive a score and appropriate feedback.
 - **Responsiveness**: Designed to run smoothly on different Android screen sizes.
 - **Code Comments**: Includes in-line code comments for clarity and maintainability.
+- **Review Page**: Includes a page for you to review through all the questions and their answers.
 
 ---
 
@@ -38,7 +39,6 @@ The purpose of this application is to:
 - **CI/CD Integration**: Utilized **GitHub Actions** to:
   - Automatically check for build errors on push.
   - Ensure code integrity and workflow consistency.
-- **Collaborative Features**: GitHub Issues and Pull Requests were explored for project management and future scalability.
 
 ---
 
@@ -51,7 +51,7 @@ The purpose of this application is to:
 
 ## AI Acknowledgment
 
-> This project's structure and documentation (including this README) were assisted by **AI support** using OpenAI’s ChatGPT, to enhance clarity and organization.
+> This readme file's structure and documentation were assisted by **AI support** using OpenAI’s ChatGPT, to enhance clarity and organization.
 
 ---
 
