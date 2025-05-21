@@ -29,7 +29,6 @@ The purpose of this application is to:
 - **Score Feedback**: At the end of the quiz, users receive a score and appropriate feedback.
 - **Responsiveness**: Designed to run smoothly on different Android screen sizes.
 - **Code Comments**: Includes in-line code comments for clarity and maintainability.
-- **Modular Codebase**: Separation of logic and UI components for scalability.
 
 ---
 
@@ -45,30 +44,14 @@ The purpose of this application is to:
 
 ## 🖼️ Screenshots
 
-> _You can add screenshots of your app in this section._
 
-| Home Screen | Question Screen | Result Screen |
-|-------------|------------------|----------------|
-| ![Home](path/to/home_screen.png) | ![Question](path/to/question_screen.png) | ![Result](path/to/result_screen.png) |
 
-_Replace the `path/to/` with the actual image paths in your repository after uploading screenshots._
-
----
-
-## 🔗 Video Demonstration
-
-Watch a brief demo of the app in action:  
-➡️ **[Click to watch the demo](https://youtube.com/shorts/xEReXB3EBIk)**
 
 ---
 
 ## 📚 References
 
-- Kotlin Documentation: https://kotlinlang.org/docs/home.html  
-- Android Developers: https://developer.android.com  
-- GitHub Docs: https://docs.github.com/en  
-- GitHub Actions: https://docs.github.com/en/actions  
-- Flashcard Learning Theory: [Wikipedia - Flashcard](https://en.wikipedia.org/wiki/Flashcard)
+
 
 ---
 
@@ -78,5 +61,4 @@ Watch a brief demo of the app in action:
 
 ---
 
-## 📂 Repository Structure
 
