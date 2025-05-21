@@ -25,6 +25,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
         val tvQuestions = findViewById<TextView>(R.id.tvQuestions)
 
         //used a youtube video as a reference to help with the code
+        //the questions are from chatgpt " 5 funny history trivia questions"
         //https://www.youtube.com/watch?v=K13fR2RHTak
         //an array of questions that will be displayed
         val questions = arrayOf(
@@ -40,6 +41,7 @@ class FlashcardQuestionsMainActivity : AppCompatActivity() {
         val answers = booleanArrayOf(true, false, true, false, true)
 
         //used a youtube video as a reference to help with the code
+        //the answers are from chatgpt " 5 funny history trivia questions"
         //https://www.youtube.com/watch?v=K13fR2RHTak
         //an array of correct messages that will be displayed
         val correctMessages = arrayOf(
